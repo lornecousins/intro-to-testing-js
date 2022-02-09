@@ -11,6 +11,17 @@ function sayHello(input) {
 //     }
 //     else {
 //         return "Hello, Jane!";
-function sayHello(input) {}
-return 'Hello, ' + input + '!';
+//     if (input === undefined || input === false) {
+//         return 'Hello, World!';
+//     }
+//     else {
+//         return 'Hello, ' + input + '!';
+//     }
+// }
+    if (typeof input !== "string") {
+        return 'Hello, World!';
+    }
+    else {
+        return 'Hello, ' + input + '!';
+    }
 }
